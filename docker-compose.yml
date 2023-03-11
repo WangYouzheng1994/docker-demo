@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  microService:
+    image: mydocker_image:1.1
+    container_name: mdc:0.0.1
+    ports:
+      - "9888:1024"
+    volumes:
+      - /opt/docker/mydocker_image:/data
+    networks:
+      - abc
